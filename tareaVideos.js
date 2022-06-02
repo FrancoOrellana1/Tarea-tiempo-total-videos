@@ -13,7 +13,7 @@ $agregarFila.onclick = function(){
         nuevaFilaNumero.appendChild(nuevoParrafo);
         nuevoParrafo.innerText =('Clase ' + numeroClase);
         nuevaFila.appendChild(nuevoDiv);
-        nuevoDiv.innerHTML='<label>Horas</label><input type="number" id="horas"><label>Minutos</label><input type="number" id="minutos"><label>Segundos</label><input type="number" id="segundos">'
+        nuevoDiv.innerHTML='<label>Horas </label><input type="number" id="horas"><label>Minutos </label><input type="number" id="minutos"><label>Segundos </label><input type="number" id="segundos">'
         x++;
         numeroClase ++;
     }
