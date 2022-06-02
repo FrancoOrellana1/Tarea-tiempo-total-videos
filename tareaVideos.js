@@ -2,7 +2,8 @@
 const $agregarFila = document.querySelector('#agregar-fila');
 let x= 0;
 let numeroClase = 1;
-$agregarFila.onclick = function () {
+
+$agregarFila.onclick = function(){
     const $cantidadFilas = document.querySelector('#cantidad-clases').value;
     while(x<$cantidadFilas){
         const nuevaFila= document.querySelector('div');
@@ -16,7 +17,7 @@ $agregarFila.onclick = function () {
         x++;
         numeroClase ++;
     }
-    return false
+    
 }
 
 const $tiempoTotal = document.querySelector('#calcular-tiempo');
