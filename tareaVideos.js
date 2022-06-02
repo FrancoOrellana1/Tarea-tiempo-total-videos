@@ -1,4 +1,22 @@
-
+const $cantidadFilas = document.querySelector('#cantidad-clases').value;
+const $agregarFila = document.querySelector('#agregar-fila');
+let x= 0;
+let numeroClase = 1;
+$agregarFila.onclick = function () {
+    while(x<$cantidadFilas){
+        const nuevaFila= document.querySelector('div');
+        const nuevoDiv= document.createElement('div');
+        const nuevaFilaNumero = document.querySelector('div');
+        const nuevoParrafo = document.createElement('p');
+        nuevaFilaNumero.appendChild(nuevoParrafo);
+        nuevoParrafo.innerText =('Clase ' + numeroClase);
+        nuevaFila.appendChild(nuevoDiv);
+        nuevoDiv.innerHTML='<label>Horas</label><input type="number" id="horas"><label>Minutos</label><input type="number" id="minutos"><label>Segundos</label><input type="number" id="segundos">'
+        x++;
+        numeroClase ++;
+    }
+    return false
+}
 
 const $tiempoTotal = document.querySelector('#calcular-tiempo');
 
